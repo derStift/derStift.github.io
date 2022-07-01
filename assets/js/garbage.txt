@@ -1,0 +1,35 @@
+
+
+
+        output = []
+
+        var row = 1;
+
+            data = cellDataFromId(row, cols);
+            itemPopper(inSitu[cols], Number(data));
+            output[1] = randomNumberSelector(inSitu[cols]);
+
+            for( var k = 2; k <= 8; k++)
+            {
+                itemPopper(inSitu[cols], output[k - 1])
+                output[k] = randomNumberSelector(inSitu[cols]);
+            }
+
+            console.log(output)
+
+            for( var i = 1; i <= 9; i++){
+                document.getElementsByClassName(cellId(cols, i))[0].value = output[i]
+            }
+            
+                    <section>
+            <table id = "head-panel" border = "10px" cellpadding = "10px" align="center">
+                <tr>
+                    <td id = "head-panel-cells"><a href = "index.html">Home</a></td>
+                    <td id = "head-panel-cells"><a href = "german.html">German</a></td>
+                    <td id = "head-panel-cells"><a href = "french.html">French</a></td>
+                    <td id = "head-panel-cells"><a href = "cv.html">CV/About me</a></td>
+                    <td id = "head-panel-cells"><a href = "contact.html">Contacts</a></td>
+                    <td id = "head-panel-cells"><a href = "sudoko.html">Sudoko</a></td>
+                </tr>
+            </table>
+        </section>

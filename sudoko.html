@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sudoko</title>
+
+        <meta name = "description" content = "Sudoko">
+        <meta name = "author" content = "Arr Y?">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <link rel = "stylesheet" href = "assets/css/main.css">
+    </head>
+
+    <body align = "center">
+        <header align = "center">A project website by &copy;Arr Y?</header>
+
+        <p id = 'main'><stift>&nbsp;DER STIFT&nbsp;</stift>
+        <br>
+        <br>
+
+         <stift-2>&nbsp;?!SUDOKO!?&nbsp;</stift-2>
+         <br>
+         <br>
+         <stift-3>&nbsp;Time:&nbsp;</stift-3><stift-3 id = 'time'>&nbsp;00&nbsp;</stift-3>
+         
+         <br>
+         <table align="center" border = "0px"> 
+
+            <tr><td rowspan = 13>&nbsp;</td>
+                <td rowspan = 13>&nbsp;</td>
+                <td colspan = 10>&nbsp;</td>
+                <td rowspan = 13>&nbsp;</td><td rowspan = 13>&nbsp;</td>
+               
+                
+            </tr>
+            <tr>
+                <td><input id = "imp" size = "1" class = '11'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '12'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '13'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '14'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '15'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '16'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '17'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '18'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '19'>&nbsp;</input></td>
+                <td rowspan="12">HIGH SCORES:<br>lol</td>
+            </tr>
+
+            <tr>
+                <td><input id = "imp" size = "1" class = '21'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '22'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '23'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '24'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '25'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '26'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '27'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '28'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '29'>&nbsp;</input></td>
+            </tr>
+
+            <tr>
+                <td><input id = "imp" size = "1" class = '31'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '32'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '33'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '34'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '35'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '36'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '37'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '38'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '39'>&nbsp;</input></td>
+            </tr>
+
+            <tr>
+                <td><input id = "imp" size = "1" class = '41'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '42'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '43'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '44'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '45'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '46'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '47'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '48'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '49'>&nbsp;</input></td>
+            </tr>
+
+            <tr>
+                <td><input id = "imp" size = "1" class = '51'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '52'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '53'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '54'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '55'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '56'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '57'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '58'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '59'>&nbsp;</input></td>
+            </tr>
+
+            <tr>
+                <td><input id = "imp" size = "1" class = '61'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '62'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '63'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '64'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '65'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '66'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '67'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '68'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '69'>&nbsp;</input></td>
+            </tr>
+
+            <tr>
+                <td><input id = "imp" size = "1" class = '71'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '72'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '73'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '74'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '75'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '76'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '77'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '78'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '79'>&nbsp;</input></td>
+            </tr>
+
+            <tr>
+                <td><input id = "imp" size = "1" class = '81'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '82'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '83'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '84'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '85'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '86'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '87'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '88'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '89'>&nbsp;</input></td>
+            </tr>
+
+            <tr>
+                <td><input id = "imp" size = "1" class = '91'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '92'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '93'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '94'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '95'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '96'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '97'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '98'>&nbsp;</input></td>
+                <td><input id = "imp" size = "1" class = '99'>&nbsp;</input></td>
+            </tr>
+        
+            <tr><td>&nbsp;</td></tr>
+            <tr><td colspan = 9>
+                <stift-3 id = "new-btn">&nbsp;New Game&nbsp;</stift-3>
+                <stift-3 id = "start-btn">&nbsp;Start/Reset&nbsp;</stift-3>
+                <stift-3 id = "check-btn">&nbsp;Check&nbsp;</stift-3>
+            </td></tr>
+            <tr><td colspan = 10>&nbsp;</td></tr>
+         </table>
+
+         <br>
+        </p>
+        <p id = "tst">hello</p>
+        <footer>&copy;Arr Y? 2022</footer>
+        <script src = 'assets/js/main.js'></script>
+    </body>
+
+</html>
