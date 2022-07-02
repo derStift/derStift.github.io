@@ -150,18 +150,18 @@ function main(input){
 
 function colsSolver(input){
 
-    inputTransposed = arrayTransposer(input);
-
     for(var row = 1; row <= 9; row++){
 
-        missingData = main(inputTransposed[row]).missingData;
-        outputRepeated = main(inputTransposed[row]).outputRepeated;
-        outputNonRepeated = main(inputTransposed[row]).outputNonRepeated;
+        inputTransposed = arrayTransposer(input[row]);
+
+        missingData = main(inputTransposed).missingData;
+        outputRepeated = main(inputTransposed).outputRepeated;
+        outputNonRepeated = main(inputTransposed).outputNonRepeated;
         missingData.shift();
 
-        for(var i = row; i <= inputTransposed[row].length; i++){
-            if(inputTransposed[row].lastIndexOf(outputRepeated[i]) != inputTransposed[row].indexOf(outputRepeated[i])){
-
+        for(var i = row; i <= inputTransposed.length; i++){
+            if(inputTransposed.lastIndexOf(inputTransposed[i]) != inputTransposed.indexOf(inputTransposed[i])){
+                console.log(inputTransposed[i]);
             }
         }
        

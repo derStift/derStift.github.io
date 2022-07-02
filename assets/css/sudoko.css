@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+input{
+    text-align: center;
+    border-radius: 100px;
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background-color: rgba(245, 245, 220, 0.3);
+    font-weight: medium;
+    padding-left: 1px;
+    font-size: larger;
+    font-family:cursive;
+    size: 10px;
+    border-width: 1px;
+    
+}
+table {
+    border: 2px;
+    border-color: black;
+    background-image: url("wood.png");
+    border-radius: 25px;
+    border-bottom-left-radius: 130px;
+    border-bottom-right-radius: 25px;
+    border-collapse:collapse;
+}
+stift{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1.25in;
+    background-color: rgba(245, 245, 220, 0.7);
+    border-radius: 100px;
+}
+stift-2{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 0.75in;
+    background-color: rgba(245, 245, 220, 0.7);
+    border-radius: 100px;
+}
+
+stift-3{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 0.25in;
+    background-color: rgba(245, 245, 220, 0.7);
+    border-radius: 100px;
+}
+
+#start-btn{
+    border: 5px;
+    border-radius: 100px;
+    background-color: rgb(255, 103, 103);
+    border-color: rgb(0, 0, 0);
+    border-style:inset;
+    box-shadow: inset;
+    box-sizing: content-box;
+    cursor: grab;
+}
+
+#check-btn {
+    border: 5px;
+    border-radius: 100px;
+    background-color:chartreuse;
+    border-color: rgb(0, 0, 0);
+    border-style:inset;
+    box-shadow: inset;
+    cursor: grab;
+    box-sizing: content-box;
+}
+
+#new-btn {
+    border: 5px;
+    border-radius: 100px;
+    background-color: rgb(255, 136, 0);
+    border-color: rgb(0, 0, 0);
+    border-style:inset;
+    box-shadow: inset;
+    cursor: grab;
+    box-sizing: content-box;
+}
+body{
+    background-image: url("p.png");
+    background-size:cover;
+    background-repeat: 0;
+    cursor:cell;
+    text-align: center;
+}
+
+#head-panel{
+    border: 2px;
+    border-color: black;
+    background-image: url("wood.png");
+    border-radius: 25px;
+    border-bottom-left-radius: 130px;
+    border-top-right-radius: 130px;
+    border-collapse:collapse;
+}

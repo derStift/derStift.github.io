@@ -25,7 +25,7 @@ table {
 }
 stift{
     font-family: 'Fredericka the Great', cursive;
-    font-size: 1.25in;
+    font-size: 0.75in;
     background-color: rgba(245, 245, 220, 0.7);
     border-radius: 100px;
 }
@@ -83,3 +83,12 @@ body{
     text-align: center;
 }
 
+#head-panel{
+    border: 2px;
+    border-color: black;
+    background-image: url("wood.png");
+    border-radius: 25px;
+    border-bottom-left-radius: 130px;
+    border-top-right-radius: 130px;
+    border-collapse:collapse;
+}
