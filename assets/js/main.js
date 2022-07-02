@@ -152,39 +152,24 @@ function colsSolver(input){
 
     inputTransposed = arrayTransposer(input);
 
-    missingData = [];
-    outputRepeated = [];
-    outputRepeated = [];
-    var inSitu = 0;
-
     for(var row = 1; row <= 9; row++){
+
         missingData = main(inputTransposed[row]).missingData;
         outputRepeated = main(inputTransposed[row]).outputRepeated;
         outputNonRepeated = main(inputTransposed[row]).outputNonRepeated;
-        missingData.shift()
+        missingData.shift();
 
-
-        for(var i = row; i <= outputRepeated.length - 1; i++){
+        for(var i = row; i <= inputTransposed[row].length; i++){
             if(inputTransposed[row].lastIndexOf(outputRepeated[i]) != inputTransposed[row].indexOf(outputRepeated[i])){
-                
-                input[i].splice(input[i].indexOf(missingData[1]), 1, outputRepeated[i]);
-                inputTransposed[row].splice(inputTransposed.indexOf(outputRepeated[i], missingData[1]));
 
-                missingData.shift()
-                
             }
         }
        
     }
-    console.log(input)
     return(input)
 }
 
 meshData = colsGenerator();
-
-console.log(meshData);
-
-colsSolver(meshData);
 
 function colsPopulatorPressed(){
 
@@ -198,7 +183,6 @@ function newgame(){
 
 function check(){
     meshData = colsSolver(meshData);
-    newgame()
 }
 
 document.getElementById('start-btn').addEventListener('click', colsPopulatorPressed)
