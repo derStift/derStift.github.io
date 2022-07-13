@@ -149,24 +149,23 @@ function main(input){
 }
 
 function colsSolver(input){
+    
+    inputTransposed = arrayTransposer(input);
 
     for(var row = 1; row <= 9; row++){
 
-        inputTransposed = arrayTransposer(input[row]);
-
-        missingData = main(inputTransposed).missingData;
-        outputRepeated = main(inputTransposed).outputRepeated;
-        outputNonRepeated = main(inputTransposed).outputNonRepeated;
+        missingData = main(inputTransposed[row]).missingData;
+        outputRepeated = main(inputTransposed[row]).outputRepeated;
+        outputNonRepeated = main(inputTransposed[row]).outputNonRepeated;
         missingData.shift();
 
-        for(var i = row; i <= inputTransposed.length; i++){
-            if(inputTransposed.lastIndexOf(inputTransposed[i]) != inputTransposed.indexOf(inputTransposed[i])){
-                console.log(inputTransposed[i]);
-            }
-        }
+        console.log('missing data', missingData)
+        console.log('Output Repeated', outputRepeated)
+        console.log('Non Repeated', outputNonRepeated)
        
     }
-    return(input)
+
+    
 }
 
 meshData = colsGenerator();

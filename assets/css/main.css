@@ -22,6 +22,7 @@ table {
     border-bottom-left-radius: 130px;
     border-bottom-right-radius: 25px;
     border-collapse:collapse;
+    align-self: center;
 }
 stift{
     font-family: 'Fredericka the Great', cursive;
@@ -80,7 +81,6 @@ body{
     background-size:cover;
     background-repeat: 0;
     cursor:cell;
-    text-align: center;
 }
 
 #head-panel{
@@ -91,4 +91,9 @@ body{
     border-bottom-left-radius: 130px;
     border-top-right-radius: 130px;
     border-collapse:collapse;
+}
+
+.hover-this:active {
+    background-color: red;
+    
 }
